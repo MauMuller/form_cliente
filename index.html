@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="logo_franquia.png" type="image/x-icon">
+    <script defer src="js/controller.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="./js/menu_mobile.js"></script>
+    <title>Ficha de Qualificação</title>
+</head>
+<body id="flex-container">
+    <header id="header">
+
+        <nav id="nav_links">
+            <figure class="header_container figure_container default_width">
+                <a href="https://idealcredfranquias.com.br/" target="__blank"> 
+                    <img class="img_header" src="./image/logo_franquia.png" alt="Logo"> 
+                </a>
+                <a href="https://www.abf.com.br/?gclid=CjwKCAjwp7eUBhBeEiwAZbHwkQdmkOmF7xWTzFgXA-DGIY2lcz78O9sbfLvOJwGZmyySUlnlFw15kRoC_nQQAvD_BwE" target="__blank"> 
+                    <img class="img_header" src="./image/ABF.png" alt="ABF">
+                </a>
+            </figure>
+
+            <ul class="header_container links_container">
+                <li><a href="https://idealcredfranquias.com.br/#quem-somos" target="__blank">Quem Somos</a></li>
+                <li><a href="https://idealcredfranquias.com.br/#mercado" target="__blank">Mercado</a></li>
+                <li><a href="https://idealcredfranquias.com.br/#diferenciais" target="__blank">Diferenciais</a></li>
+                <li><a href="https://idealcredfranquias.com.br/#a-loja" target="__blank">A loja</a></li>
+                <li><a href="https://idealcredfranquias.com.br/#faq" target="__blank">FAQ</a></li>
+                <li><a href="https://idealcredfranquias.com.br/#contato_footer" target="__blank">Contato</a></li>
+                <li><a href="https://idealcredfranquias.com.br/blog.php" target="__blank">Blog</a></li>
+            </ul>
+
+            <div class="header_container container_mobile hidden_element">
+                <div class="menu-mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    
+        <div id="nav_icons">
+          <div id="container_nav">
+            <img src="./image/frase_nav_icons.png" alt="+ 35 ANOS">
+            <ul>
+              <li><a href="https://api.whatsapp.com/send?phone=5551996573544" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+              <li><a href="https://www.facebook.com/idealcredfranquias" target="_blank"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCrFlFm9ldbbThs7xxHuIP0A" target="_blank"><i class="bi bi-youtube"></i></a></li>
+              <li><a href="https://www.instagram.com/accounts/login/?next=/idealcredfranquias/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+    </header>
+
+    <form id="form_principal">
+        <section class="container">
+            <h1>Dados Pessoais</h1>
+            <div>
+                <label for="cFullName">Nome Completo *</label>
+                <input type="text" name="cFullName" id="cFullName" placeholder="Ex: Mauricio Muller">
+
+                <label for="cRG">RG *</label>
+                <input type="text" name="cRG" id="cRG" placeholder="Ex: 46.597.552-5">
+
+                <label for="cCPF">CPF *</label>
+                <input type="text" name="cCPF" id="cCPF" placeholder="Ex: 239.122.130-12">
+
+                <label for="cText">Se desejar, deixe sua mensagem </label>
+                <textarea name="cText" id="cText" cols="30" rows="10"></textarea>
+
+                <label for="cDate">Data de Nascimento *</label>
+                <input type="date" name="cDate" id="cDate">
+                
+                <label for="cCivil">Estado Civil *</label>
+                <select name="cCivil" id="cCivil">
+                    <option value="Casado(a)">Casado(a)</option>
+                    <option value="Solteiro(a)">Solteiro</option>
+                    <option value="Viúvo(a)">Viúvo(a)</option>
+                    <option value="União Estável">União Estável</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="container">
+            <h1>Endereço</h1>
+            <div>
+                <label for="cStreet">Rua *</label>
+                <input type="text" name="cStreet" id="cStreet" placeholder="Ex: Alameda, 288">
+
+                <label for="cState">Estado *</label>
+                <select id="cState" name="cState">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </select>
+
+                <label for="cCity">Cidade *</label>
+                <input type="text" name="cCity" id="cCity" placeholder="Ex: Santa Maria">
+
+                <label for="cCep">Cep *</label>
+                <input type="text" name="cCep" id="cCep" placeholder="Ex: 96823-030">
+            </div>
+        </section>
+
+        <section class="container">
+            <h1>Dados Profissionais</h1>
+            <div>
+                <label for="cJob">Cargo *</label>
+                <input type="text" name="cJob" id="cJob" placeholder="Ex: Advogado">
+
+                <label for="cCompany">Empresa *</label>
+                <input type="text" name="cCompany" id="cCompany" placeholder="Ex: Ideal Contabilidade">
+
+                <label for="cTimeComp">Tempo de Vinculo *</label>
+                <input type="text" name="cTimeComp" id="cTimeComp" placeholder="Ex: 08 (´08 Anos = 8 meses´  | Apenas Anos*)">
+            </div>
+        </section>
+
+        <section class="container">
+            <h1>Dados Complementares</h1>
+            <div>
+                <label for="cPrev">Previsão de Entrada na Franquia *</label>
+                <input type="text" name="cPrev" id="cPrev" placeholder="Ex: 00,00">
+
+                <label for="cRenda">Franquia será sua principal Fonte de Renda? *</label>
+                <ul>
+                    <li>
+                        <input type="radio" name="cRenda" value="Sim" id="cRendaY" checked>
+                        <label for="cRendaY">Sim</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="cRenda" value="Não" id="cRendaN">
+                        <label for="cRendaN">Não</label>
+                    </li>
+                </ul>
+            
+                <label for="cWhy">Por que você gostaria de ter seu próprio negócio? *</label>
+                <input type="text" name="cWhy" id="cWhy" placeholder="Ex: mais renda">
+            </div>
+        </section>
+
+        <section class="container">
+            <h1>Praça de Interesse</h1>
+            <div>
+                <label for="cOption1">Opção 1 - Cidade / Bairro Franquia</label>
+                <input type="text" name="cOption1" id="cOption1">
+
+                <label for="cOption2">Opção 2 - Cidade / Bairro Franquia</label>
+                <input type="text" name="cOption2" id="cOption2">
+
+                <label for="cOption3">Opção 3 - Cidade / Bairro Franquia</label>
+                <input type="text" name="cOption3" id="cOption3">
+            </div>
+        </section>
+
+        <section class="container">
+            <input type="submit" value="Enviar" name="cButton">
+        </section>
+    </form>
+
+    <section class="window_mobile_menu hidden_element">
+        <div class="container_mobile_elements mobal-icon"></div>
+        <div class="container_mobile_elements mobal-list-container">
+            <ul class="header_container links_container mobal-list">
+                <li><a href="https://idealcredfranquias.com.br/#quem-somos" target="__blank">Quem Somos</a></li>
+                <li><a href="https://idealcredfranquias.com.br/#mercado" target="__blank">Mercado</a></li>
+                <li><a href="https://idealcredfranquias.com.br/#diferenciais" target="__blank">Diferenciais</a></li>
+                <li><a href="https://idealcredfranquias.com.br/#a-loja" target="__blank">A loja</a></li>
+                <li><a href="https://idealcredfranquias.com.br/#faq" target="__blank">FAQ</a></li>
+                <li><a href="https://idealcredfranquias.com.br/#contato_footer" target="__blank">Contato</a></li>
+                <li><a href="https://idealcredfranquias.com.br/blog.php" target="__blank">Blog</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
